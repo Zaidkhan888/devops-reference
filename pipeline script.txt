@@ -1,0 +1,52 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+ stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+ stage('Test') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+stage('Deploy') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+//* jar file location in c drive C:\jar
+
+
+//cmd command
+
+java -jar C:\jar\agent.jar -jnlpUrl http://localhost:8080/computer/Agent%20Slave1/jenkins-agent.jnlp -secret 4e395d5c685c4e4b0b466dd3632ba0a18ea14d4912d4b344f3091dd8a67ce5fc -workDir "C:\Users\Home Pc\Desktop"
+
+
+
+java -jar C:\jar2\agent.jar -jnlpUrl http://localhost:8080/computer/Agent%20Slave2/jenkins-agent.jnlp -secret 7bc953661de486d8c75d27c1e48b2a82fbab8e40ef415489c9eb57c489ea04c4 -workDir "C:\Zaid\decosp"
+
+
+
+java -jar C:\Zaid\decosp\jar_for_slave02\agent.jar -jnlpUrl http://localhost:8080/computer/Agent%5FSlave2/jenkins-agent.jnlp -secret db8ef86d0c36028b33e5410be971e8f9b33a86a5cedbff81bec3e0943a90b833 -workDir "C:\Zaid\decosp\workspace_of_Agent_slave3"
